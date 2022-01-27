@@ -38,6 +38,7 @@ client.on("messageCreate", function(message) {
   const command = args.shift().toLowerCase();
 
   if (command === 'add') {
+      console.log('add');
       message.reply(args.map((arg) => +arg).reduce((acc,next) => acc + next,0).toString())
   }
 
